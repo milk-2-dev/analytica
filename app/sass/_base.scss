@@ -1,0 +1,33 @@
+
+/**********************************************************************************************
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+										3. Global Styles
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+***********************************************************************************************/
+
+html, body {
+  overflow-x:hidden;
+}
+body {
+  overflow:hidden;
+  font:400 16px/1.875 'MuseoSans', Helvetica, Arial, sans-serif;
+  color:map_get($colors, 'grey');
+  background:#fefefe;
+  position:relative;
+
+  &.mobile{
+    padding-bottom:73px;
+  }
+}
+img, iframe {
+  max-width:100%;
+}
+img {
+  height: auto;
+}
+.clearfix {
+  clear:both;
+}
+.color-light {
+  color:#fff;
+}

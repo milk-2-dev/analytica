@@ -1,0 +1,26 @@
+{
+  "name": "pachages for sally",
+  "description": "My first gulp using",
+  "main": "index.js",
+  "authors": [
+    "Roman Klimov"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/KlimKREMEN/sally-static",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3",
+    "OwlCarousel2": "^2",
+    "components-font-awesome": "^4.7.0",
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
