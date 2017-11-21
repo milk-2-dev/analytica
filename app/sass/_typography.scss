@@ -9,12 +9,13 @@ h1, h2, h3, h4, h5, h6 {
   color:map-get($colors, 'h-color');
   font-weight:300;
   line-height:1.25;
+  font-family: 'RoadRadio', Helvetica, Arial, sans-serif;;
 }
 .color-light h1, .color-light h2, .color-light h3, .color-light h4, .color-light h5, .color-light h6, .color-light label{
   color:#fff;
 }
 h1{
-  font-size:3em;
+  font-size: 36px;
   margin:.3125em 0 .5em;
 }
 h2{
