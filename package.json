@@ -1,8 +1,8 @@
 {
-  "name": "LP analytics",
+  "name": "LP-analytics",
   "version": "1.0.0",
   "description": "Packages for lp analytics",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "gulp": "^3.9.1"
   },
