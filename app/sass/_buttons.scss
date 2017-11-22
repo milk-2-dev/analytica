@@ -1,0 +1,38 @@
+.button{
+  display: inline-block;
+  padding:10px 32px 8px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: .2s ease-in-out;
+  border:1px solid transparent;
+  font-family: 'RoadRadio', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+
+  &:hover,
+  &:focus{
+    text-decoration: none;
+  }
+
+  &.bg-white{
+    background: #fff;
+    color: map_get($colors, 'blue');
+
+    &:hover{
+      background: map_get($colors, 'blue');
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+
+  &.bg-blue{
+    background: map_get($colors, 'blue');
+    color: #fff;
+
+    &:hover{
+      background: #fff;
+      color: map_get($colors, 'blue');
+      border-color: map_get($colors, 'blue');
+    }
+  }
+}
