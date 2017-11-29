@@ -11,12 +11,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height:1.25;
   font-family: 'RoadRadio', Helvetica, Arial, sans-serif;;
 }
-.color-light h1, .color-light h2, .color-light h3, .color-light h4, .color-light h5, .color-light h6, .color-light label{
-  color:#fff;
-}
 h1{
   font-size: 50px;
-  margin:.3125em 0 .5em;
+  margin:0 0 .5em;
 }
 h2{
   font-size:2.25em;
@@ -47,97 +44,4 @@ a{
 }
 a:hover{
   text-decoration: none;
-}
-h2.big{
-  font-size:2.625em;
-}
-h5.big{
-  font-size:1.25em;
-}
-.big,
-p.big{
-  font-size:1.125em;
-}
-.thin {
-  font-weight:300;
-}
-.regular {
-  font-weight:400;
-}
-.bold {
-  font-weight:700;
-}
-.extra-bold {
-  font-weight:800;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.bg-size-cover {
-  background-size: cover;
-}
-.bg-pos-right-bottom {
-  background-position: right bottom;
-}
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-.bg-position-center {
-  background-position: center !important;
-}
-.line-height60 {
-  line-height: 60px;
-}
-.heading-block,
-h1.heading-block,
-.page-heading h1.heading-block{
-  font-size:7.5em;
-  font-family:'Proxima Nova', sans-serif;
-  padding:20px 60px;
-  border:10px solid #fff;
-  line-height:1;
-  display:inline-block;
-  text-transform:uppercase;
-  font-weight:700;
-}
-h1.heading-block.style-simple{
-  border:none;
-  padding:0;
-  display:block;
-  line-height:1.2;
-}
-h1.big,
-.page-heading h1.big,
-.page-heading.style-image h1.big{
-  font-size:5.625em;
-  font-family:'Proxima Nova', sans-serif;
-  line-height:1;
-}
-.heading-spaced{
-  font-size:.875em;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-.text-block {
-  font-size: 18px;
-  line-height: 36px;
-}
-.text-block.smaller-font {
-  font-size: 16px;
-  line-height: 1.875;
-}
-.text-block.font-alt {
-  font-family: 'Playfair Display', serif;
-}
-.text-block.font-alt h2 {
-  font-size: 52px;
-  line-height: 62px;
-  text-transform: none;
-}
-.text-block.font-alt2 {
-  font-family: 'Source Sans Pro','Open Sans' ,Helvetica ,sans-serif;
-}
-.text-block.font-alt2 p.big {
-  font-size: 22px;
 }

@@ -13,3 +13,7 @@
 .color-white{
   color:#fff;
 }
+
+.color-blue{
+  color:map_get($colors, 'blue');
+}

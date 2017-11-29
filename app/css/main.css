@@ -11,12 +11,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   font-family: 'RoadRadio', Helvetica, Arial, sans-serif; }
 
-.color-light h1, .color-light h2, .color-light h3, .color-light h4, .color-light h5, .color-light h6, .color-light label {
-  color: #fff; }
-
 h1 {
   font-size: 50px;
-  margin: .3125em 0 .5em; }
+  margin: 0 0 .5em; }
 
 h2 {
   font-size: 2.25em;
@@ -46,98 +43,6 @@ a {
 
 a:hover {
   text-decoration: none; }
-
-h2.big {
-  font-size: 2.625em; }
-
-h5.big {
-  font-size: 1.25em; }
-
-.big,
-p.big {
-  font-size: 1.125em; }
-
-.thin {
-  font-weight: 300; }
-
-.regular {
-  font-weight: 400; }
-
-.bold {
-  font-weight: 700; }
-
-.extra-bold {
-  font-weight: 800; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-.bg-size-cover {
-  background-size: cover; }
-
-.bg-pos-right-bottom {
-  background-position: right bottom; }
-
-.bg-no-repeat {
-  background-repeat: no-repeat; }
-
-.bg-position-center {
-  background-position: center !important; }
-
-.line-height60 {
-  line-height: 60px; }
-
-.heading-block,
-h1.heading-block,
-.page-heading h1.heading-block {
-  font-size: 7.5em;
-  font-family: 'Proxima Nova', sans-serif;
-  padding: 20px 60px;
-  border: 10px solid #fff;
-  line-height: 1;
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 700; }
-
-h1.heading-block.style-simple {
-  border: none;
-  padding: 0;
-  display: block;
-  line-height: 1.2; }
-
-h1.big,
-.page-heading h1.big,
-.page-heading.style-image h1.big {
-  font-size: 5.625em;
-  font-family: 'Proxima Nova', sans-serif;
-  line-height: 1; }
-
-.heading-spaced {
-  font-size: .875em;
-  text-transform: uppercase;
-  letter-spacing: 4px; }
-
-.text-block {
-  font-size: 18px;
-  line-height: 36px; }
-
-.text-block.smaller-font {
-  font-size: 16px;
-  line-height: 1.875; }
-
-.text-block.font-alt {
-  font-family: 'Playfair Display', serif; }
-
-.text-block.font-alt h2 {
-  font-size: 52px;
-  line-height: 62px;
-  text-transform: none; }
-
-.text-block.font-alt2 {
-  font-family: 'Source Sans Pro','Open Sans' ,Helvetica ,sans-serif; }
-
-.text-block.font-alt2 p.big {
-  font-size: 22px; }
 
 /**********************************************************************************************
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -197,6 +102,11 @@ img {
   background-image: url("../images/prefooter.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+
+.custom-bg_7 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #fff), color-stop(50%, #fff), color-stop(50%, #619efb), to(#619efb));
+  background: -webkit-linear-gradient(left, #fff 0, #fff 50%, #619efb 50%, #619efb 100%);
+  background: linear-gradient(to right, #fff 0, #fff 50%, #619efb 50%, #619efb 100%); }
 
 #header {
   background: -webkit-radial-gradient(#557EBB, #013077);
@@ -266,14 +176,30 @@ img {
             box-shadow: 0 5px 10px -6px #fff; }
 
 .section-block {
-  padding: 80px 0; }
+  padding: 80px 0;
+  position: relative; }
+
+.first-screen {
+  padding: 0;
+  height: -webkit-calc(100vh - 98px);
+  height: calc(100vh - 98px);
+  min-height: 700px;
+  max-height: 1000px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 h1 {
   position: relative;
   padding-left: 310px;
   line-height: 1;
   font-weight: 700;
-  margin: 40px 0 90px; }
+  margin: 0 0 90px; }
   h1 span {
     position: absolute;
     left: 0;
@@ -459,6 +385,34 @@ h1 {
   #footer p {
     margin-bottom: 0; }
 
+.guarantee {
+  padding: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #fff), color-stop(50%, #fff), color-stop(50%, #619efb), to(#619efb));
+  background: -webkit-linear-gradient(left, #fff 0, #fff 50%, #619efb 50%, #619efb 100%);
+  background: linear-gradient(to right, #fff 0, #fff 50%, #619efb 50%, #619efb 100%); }
+  .guarantee .row {
+    -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+                -ms-grid-row-align: stretch;
+            align-self: stretch; }
+
+.guarantee-left,
+.guarantee-right {
+  padding: 100px 0; }
+
+.guarantee-left {
+  position: relative;
+  background: #fff; }
+  .guarantee-left svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -50px;
+    fill: #fff; }
+
+.guarantee-right {
+  padding-left: 100px; }
+
 .text-gray {
   color: #a9a9a9; }
 
@@ -470,6 +424,9 @@ h1 {
 
 .color-white {
   color: #fff; }
+
+.color-blue {
+  color: #327dea; }
 
 .button {
   display: inline-block;

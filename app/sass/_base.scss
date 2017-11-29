@@ -71,6 +71,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.custom-bg_7{
+  background: linear-gradient(to right, #fff 0, #fff 50%, #619efb 50%, #619efb 100%);
+}
 //=====================//
 //     CUSTOM-BG start    //
 //=====================//
@@ -167,6 +171,16 @@ img {
 
 .section-block{
   padding:80px 0;
+  position: relative;
+}
+
+.first-screen{
+  padding: 0;
+  height: calc(100vh - 98px);
+  min-height: 700px;
+  max-height: 1000px;
+  display: flex;
+  align-items: center;
 }
 
 h1{
@@ -174,7 +188,7 @@ h1{
   padding-left:310px;
   line-height: 1;
   font-weight: 700;
-  margin:40px 0 90px;
+  margin:0 0 90px;
 
   span{
     position: absolute;
@@ -184,6 +198,8 @@ h1{
     font-size: 150px;
   }
 }
+
+
 
 .description{
   margin-bottom: 90px;
@@ -399,4 +415,39 @@ h1{
   p{
     margin-bottom: 0;
   }
+}
+
+
+
+.guarantee{
+  padding:0;
+  background: linear-gradient(to right, #fff 0, #fff 50%, #619efb 50%, #619efb 100%);
+
+  .row{
+    align-self: stretch;
+  }
+}
+
+.guarantee-left,
+.guarantee-right{
+  padding: 100px 0;
+}
+
+.guarantee-left{
+  //padding-right:100px;
+  position: relative;
+  background: #fff;
+
+  svg{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:-50px;
+    fill: #fff;
+    //transform: rotate(90deg);
+  }
+}
+
+.guarantee-right{
+  padding-left:100px;
 }
