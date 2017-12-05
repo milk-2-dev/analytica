@@ -11,20 +11,19 @@ function animateMobile(){
 
 animateMobile();
 
-function customCollapse(){
-    $('.setting-item__desc a').on('click', function(e){
-        if($(this).parent().is('.open')){
-            $(this).parent().css('max-height', '80px');
-            $(this).parent().removeClass('open');
-            $(this).css('top', '55px');
-        }
-        else{
-            var blockHeight = $(this).parent().find('p').outerHeight(true);
-            $(this).parent().addClass('open');
-            $(this).parent().css('max-height', blockHeight);
-            $(this).css('top', blockHeight - 20);
-        }
-    })
-}
+$(document).ready(function(){
+    $('#accordion .card').each(function(){
+        $(this).find('h5').hover(function () {
 
-customCollapse()
+                var blockId = $(this).find('.collapsed').attr('href');
+                //console.log(blockId);
+
+            $(blockId).on('show.bs.collapse', function () {
+                $('#accordion').find('div[aria-expanded="true"]').collapse('hide');
+            })
+                $(this).parent().parent().find(blockId).collapse('show');
+
+
+        })
+    })
+});

@@ -17,3 +17,11 @@
 .color-blue{
   color:map_get($colors, 'blue');
 }
+
+.bg-blue{
+  background-color: map_get($colors, 'light-blue');
+
+  .section-block__title{
+    color: #fff;
+  }
+}

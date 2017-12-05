@@ -20,15 +20,15 @@
     <header id="header">
         <div class="container">
             <div class="row align-content-center justify-content-between">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <a class="logo" href="">
                         <span>SOTNIK</span>
-                        <span>АГЕНТСТВО КОНТЕКСТНОЙ РЕКЛАМЫ</span>
+                        <!--<span>АГЕНТСТВО КОНТЕКСТНОЙ РЕКЛАМЫ</span>-->
                     </a>
                 </div>
                 
-                <div class="col-md-3">
-                    <img src="../images/PremierBadge.png" alt="">
+                <div class="col-md-4 ">
+                    <img class="premier-banner" src="./images/PremierBadge.png" alt="">
                 </div>
                 
                 <div class="col-md-4">
@@ -64,13 +64,11 @@
                         </p>
 
                         <div class="order-button_1">
-                            <a href="" class="button bg-blue">Получить консультацию</a>
+                            <a href="" class="main-button btn-1">Получить консультацию</a>
                         </div>
 
                     </div>
                 </div>
-
-
             </div>
         </section>
 
@@ -78,7 +76,7 @@
             <div class="container">
                 <div class="row">
                     <div class="author-block">
-                        <img src="../images/Wanamaker-2.jpg" alt="">
+                        <img src="./images/Wanamaker-2.jpg" alt="">
 
                         <p>“Я знаю, что половина моего рекламного бюджета расходуется впустую. Беда в том, что я не знаю, какая именно половина”</p>
                         <span><i>Джон Ванамейкер, <br/>
@@ -125,18 +123,21 @@
             </div>
         </section>
 
-        <section class="section-block">
+        <section class="section-block bg-blue">
             <div class="container">
                 <h5 class="section-block__title">ВАМ ЗНАКОМЫ ТАКИЕ ПРОБЛЕМЫ?</h5>
 
                 <div class="video-block">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <div class="video-wrapper">
+                        <img src="images/laptop2.png" alt="">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
 
                     <div class="video-block__text">
                         <a class="text-gray text-uppercase" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             Текст видео
                         </a>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse fade" id="collapseExample">
                             <div class="card card-block">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                             </div>
@@ -167,7 +168,7 @@
                         </p>
                     </div>
                     <div class="col-md-4 align-self-center">
-                        <img src="../images/website-analytics.png" alt="">
+                        <img src="./images/website-analytics.png" alt="">
                     </div>
                 </div>
             </div>
@@ -195,7 +196,7 @@
                                 <b class="color-blue">Узнаете</b> как и куда распределяются ваши маркетинговые бюджеты
                             </li>
                             <li>
-                                <b class="color-blue">Сможете</b>  оценить работу маркетингового отдела или подрядчика по маркетингу на основе реальных данных о продажах
+                                <b class="color-blue">Сможете</b>  оценить работу маркетингового отдела или подрядчика по маркетингу <u>на основе реальных данных о продажах</u>
                             </li>
                             <li>
                                 <b class="color-blue">Высвободите</b>   свое время для более важных задач, так как все необходимые данные будут собраны в одном месте
@@ -206,162 +207,287 @@
                         <form action="" class="form-custom label_color-white">
                             <div class="form-item">
                                 <label for="">Имя</label>
-                                <input type="text">
+                                <div class="pretty-input">
+                                    <input class="form-control" type="text" placeholder="Введите имя">
+                                    <i class="fa fa-user"></i>
+                                </div>
+
                             </div>
                             <div class="form-item">
                                 <label for="">Номер телефона</label>
-                                <input type="text">
+                                <div class="pretty-input">
+                                    <input class="form-control" type="text" placeholder="Введите номер телефона">
+                                    <i class="fa fa-phone"></i>
+                                </div>
                             </div>
 
                             <div class="form-button">
-                                <button class="button bg-white">ЗАКАЗАТЬ НАСТРОЙКУ</button>
+                                <button class="main-button btn-1">ЗАКАЗАТЬ НАСТРОЙКУ</button>
+                            </div>
+
+                            <p class="confidential">
+                                <i class="fa fa-lock"></i>
+                                <a data-toggle="modal" data-target="#privacy-policy" href=""> Политика конфиденциальности</a>
+                            </p>
                         </form>
                     </div>
                 </div>
-
-
-
-                <!--<p class="order-text_1">Мы гарантируем только грамотную настройку подобной системы, что в свою очередь позволит за выбранный-->
-                    <!--отчетный период дать корректную оценку эффективности рекламных каналов, получить рекомендации по их-->
-                    <!--доработке и оптимальном использовании инвестиций в маркетинговую активность.</p>-->
-
-                <!--<div class="order-button_2">-->
-                    <!--<a class="button bg-white" href="" class="button">ЗАКАЗАТЬ НАСТРОЙКУ</a>-->
-                <!--</div>-->
-
-
             </div>
         </section>
 
-        <section class="section-block custom-bg_4 padding_b_150">
+        <section class="section-block custom-bg_3 custom-bg_4 padding_b_150">
             <div class="container">
                 <h5 class="section-block__title">ЧТО ВХОДИТ В НАСТРОЙКУ</h5>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="setting-item">
-                            <p class="setting-item__title">
-                                ROI
-                            </p>
-                            <div class="setting-item__desc">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda autem explicabo magnam sequi!
-                                    Accusamus amet at consequuntur, exercitationem explicabo fugit inventore laudantium, non praesentium quam, quidem reiciendis tempora voluptatibus!
-                                </p>
+                <div class="custom-accordion">
+                    <div id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        ROI
+                                    </a>
+                                </h5>
+                            </div>
 
-                                <a href="javascript:void(0);javascript:void(0);"><i class="fa fa-chevron-down"></i></a>
+                            <div id="collapseOne" class="collapse fade show" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+                                <div class="card-block">
+                                    Коэффициент рентабельности вложений, иллюстрирует уровень доходности или убыточности маркетинговых вложений.
+                                    При реализации сквозной аналитики вы сможете оценить эффективность по каждому источнику трафика, рекламной кампании
+                                    и даже ключевому слову. Правильное распределение бюджетов на основе полученных данных позволит значительно увеличить ваш доход.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="setting-item">
-                            <p class="setting-item__title">
-                                Средний чек
-                            </p>
-                            <div class="setting-item__desc">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, hic.
-                                </p>
-
-                                <a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Средний чек
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse fade" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="card-block">
+                                    Средняя стоимость товаров/услуг, приобретенных за одну покупку.
+                                    Позволит оценить покупательскую способность ваших клиентов, а
+                                    также покажет, как ваши маркетинговые активности влияют на конечный доход.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="setting-item">
-                            <p class="setting-item__title">
-                                Конверсия в продажи
-                            </p>
-                            <div class="setting-item__desc">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-
-                                <a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Конверсия в продажи
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse fade" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="card-block">
+                                    Коэффициент, который показывает процентное соотношение пользователей совершивших покупку к общему количеству
+                                    обратившихся посетителей, оставивших заявку. Позволит определить на
+                                    каком этапе воронки продаж вы теряете своих клиентов.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="setting-item">
-                            <p class="setting-item__title">
-                                Стоимость заявки
-                            </p>
-                            <div class="setting-item__desc">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-
-                                <a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingFour">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        Стоимость заявки
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse fade" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="card-block">
+                                    Реальная стоимость заявки/звонка по рекламным источникам, кампаниям и ключевым словам. Она позволяет правильно оптимизировать существующие рекламные кампании.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="setting-item">
-                            <p class="setting-item__title">
-                                Стоимость посетителя
-                            </p>
-                            <div class="setting-item__desc">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nostrum, perspiciatis? Aut consequatur cumque distinctio, ea eveniet iure labore laborum magni nihil, quasi repudiandae sed! Commodi harum, officiis? Dolor fugit natus numquam perspiciatis, provident ratione? Adipisci alias amet, assumenda cum eos eveniet fuga, fugiat incidunt inventore iste iusto laborum laudantium libero maiores molestiae necessitatibus neque nihil nisi odio perferendis praesentium quis quo reprehenderit unde voluptatibus! Accusantium esse laudantium minus officia, rem tempora. Accusantium, ad beatae consectetur consequatur deleniti dolorem doloribus earum eligendi, esse eum eveniet expedita explicabo fugit illo iste maiores molestiae mollitia nihil quisquam reprehenderit saepe sunt suscipit ullam ut, velit vitae voluptatum. Accusamus, ad aliquid aut beatae deleniti doloremque eaque, illo impedit maxime nulla omnis perferendis, perspiciatis porro quae quod recusandae sapiente totam vel veritatis voluptates! At dignissimos dolor doloribus laudantium quibusdam sed veritatis voluptatem. Aliquid consectetur doloremque in incidunt laborum maxime, officia, quis sequi ullam veritatis vero.
-                                </p>
-
-                                <a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingFive">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                        Стоимость посетителя
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse fade" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="card-block">
+                                    Реальная стоимость посетителя с различных рекламным источников, кампаний и ключевых слов.
+                                    Зная точную стоимость посетителя вы с лёгкостью сможете планировать бюджеты на привлечение новых клиентов.                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="setting-item">
-                            <p class="setting-item__title">
-                                Ltv
-                            </p>
-                            <div class="setting-item__desc">
-                                <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto autem deserunt. Ad animi facilis nisi odio pariatur quae, sapiente.
-                                </p>
-
-                                <a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingSix">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                        Ltv
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse fade" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="card-block">
+                                    Показатель, который демонстрирует совокупную прибыль компании с одного клиента.
+                                    Изучив LTV ваших клиентов с различных источников трафика вы сможете понять какие каналы окупаются в
+                                    долгосрочной перспективе, а какие и вовсе не приносят прибыль, и от них стоит отказаться, чтобы не выбрасывать деньги.                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="setting-item">
-                            <p class="setting-item__title">
-                                Cpo
-                            </p>
-                            <div class="setting-item__desc">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-
-                                <a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingSeven">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                        КОНВЕРСИЯ В ЗАЯВКУ
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseSeven" class="collapse fade" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="card-block">
+                                    Соотношение пользователей, которые оставили заявку на товар или услугу, к общему количеству посетителей вашего сайта.
+                                    Проанализировав этот показатель вы сможете внести необходимые изменения на ваш сайт и увеличить количество входящих звонков.                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="setting-item">
-                            <p class="setting-item__title">
-                                cpa
-                            </p>
-                            <div class="setting-item__desc">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, animi aperiam architecto asperiores, atque debitis dolore dolores enim expedita impedit iste laborum nulla officia optio pariatur sed tempora, unde.
-                                </p>
-
-                                <a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingEight">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                                        CPS
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseEight" class="collapse fade" role="tabpanel" aria-labelledby="headingEight">
+                                <div class="card-block">
+                                    Стоимость привлечения одного клиента/покупателя.
+                                    Данный показатель подскажет в какие рекламные источники стоит увеличивать вложения, а в какие наоборот — снизить.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!--<div class="row">-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="setting-item">-->
+                            <!--<p class="setting-item__title">-->
+                                <!--ROI-->
+                            <!--</p>-->
+                            <!--<div class="setting-item__desc">-->
+                                <!--<p>-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda autem explicabo magnam sequi!-->
+                                    <!--Accusamus amet at consequuntur, exercitationem explicabo fugit inventore laudantium, non praesentium quam, quidem reiciendis tempora voluptatibus!-->
+                                <!--</p>-->
+
+                                <!--<a href="javascript:void(0);javascript:void(0);"><i class="fa fa-chevron-down"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="setting-item">-->
+                            <!--<p class="setting-item__title">-->
+                                <!--Средний чек-->
+                            <!--</p>-->
+                            <!--<div class="setting-item__desc">-->
+                                <!--<p>-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, hic.-->
+                                <!--</p>-->
+
+                                <!--<a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="setting-item">-->
+                            <!--<p class="setting-item__title">-->
+                                <!--Конверсия в продажи-->
+                            <!--</p>-->
+                            <!--<div class="setting-item__desc">-->
+                                <!--<p>-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+                                <!--</p>-->
+
+                                <!--<a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="setting-item">-->
+                            <!--<p class="setting-item__title">-->
+                                <!--Стоимость заявки-->
+                            <!--</p>-->
+                            <!--<div class="setting-item__desc">-->
+                                <!--<p>-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+                                <!--</p>-->
+
+                                <!--<a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="setting-item">-->
+                            <!--<p class="setting-item__title">-->
+                                <!--Стоимость посетителя-->
+                            <!--</p>-->
+                            <!--<div class="setting-item__desc">-->
+                                <!--<p>-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nostrum, perspiciatis? Aut consequatur cumque distinctio, ea eveniet iure labore laborum magni nihil, quasi repudiandae sed! Commodi harum, officiis? Dolor fugit natus numquam perspiciatis, provident ratione? Adipisci alias amet, assumenda cum eos eveniet fuga, fugiat incidunt inventore iste iusto laborum laudantium libero maiores molestiae necessitatibus neque nihil nisi odio perferendis praesentium quis quo reprehenderit unde voluptatibus! Accusantium esse laudantium minus officia, rem tempora. Accusantium, ad beatae consectetur consequatur deleniti dolorem doloribus earum eligendi, esse eum eveniet expedita explicabo fugit illo iste maiores molestiae mollitia nihil quisquam reprehenderit saepe sunt suscipit ullam ut, velit vitae voluptatum. Accusamus, ad aliquid aut beatae deleniti doloremque eaque, illo impedit maxime nulla omnis perferendis, perspiciatis porro quae quod recusandae sapiente totam vel veritatis voluptates! At dignissimos dolor doloribus laudantium quibusdam sed veritatis voluptatem. Aliquid consectetur doloremque in incidunt laborum maxime, officia, quis sequi ullam veritatis vero.-->
+                                <!--</p>-->
+
+                                <!--<a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="setting-item">-->
+                            <!--<p class="setting-item__title">-->
+                                <!--Ltv-->
+                            <!--</p>-->
+                            <!--<div class="setting-item__desc">-->
+                                <!--<p>-->
+                                   <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto autem deserunt. Ad animi facilis nisi odio pariatur quae, sapiente.-->
+                                <!--</p>-->
+
+                                <!--<a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="setting-item">-->
+                            <!--<p class="setting-item__title">-->
+                                <!--Cpo-->
+                            <!--</p>-->
+                            <!--<div class="setting-item__desc">-->
+                                <!--<p>-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+                                <!--</p>-->
+
+                                <!--<a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="setting-item">-->
+                            <!--<p class="setting-item__title">-->
+                                <!--cpa-->
+                            <!--</p>-->
+                            <!--<div class="setting-item__desc">-->
+                                <!--<p>-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, animi aperiam architecto asperiores, atque debitis dolore dolores enim expedita impedit iste laborum nulla officia optio pariatur sed tempora, unde.-->
+                                <!--</p>-->
+
+                                <!--<a href="javascript:void(0);"><i class="fa fa-chevron-down"></i></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
                 <p class="setting-item__bonus">
-                    И еще 14 показателей, с помощью которых вы не только
-                    сможете увидеть где у вас минус, но и сможете на
-                    это повлиять!
+                    И еще более 20 показателей, с помощью которых вы не только сможете увидеть где у вас минус, но и сможете на это повлиять!
                 </p>
             </div>
         </section>
 
-        <section class="section-block custom-bg_3">
+        <section class="section-block ">
             <div class="container">
                 <h5 class="section-block__title">
                     КАК ВЫГЛЯДИТ ОТЧЕТ  СКВОЗНОЙ АНАЛИТИКИ?
@@ -389,16 +515,28 @@
                         <form action="" class="form-custom label_color-white">
                             <div class="form-item">
                                 <label for="">Имя</label>
-                                <input type="text">
+                                <div class="pretty-input">
+                                    <input class="form-control" type="text" placeholder="Введите имя">
+                                    <i class="fa fa-user"></i>
+                                </div>
+
                             </div>
                             <div class="form-item">
                                 <label for="">Номер телефона</label>
-                                <input type="text">
+                                <div class="pretty-input">
+                                    <input class="form-control" type="text" placeholder="Введите номер телефона">
+                                    <i class="fa fa-phone"></i>
+                                </div>
                             </div>
 
                             <div class="form-button">
-                                <button class="button bg-blue">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                                <button class="main-button btn-1">ЗАКАЗАТЬ НАСТРОЙКУ</button>
                             </div>
+
+                            <p class="confidential">
+                                <i class="fa fa-lock"></i>
+                                <a data-toggle="modal" data-target="#privacy-policy" href=""> Политика конфиденциальности</a>
+                            </p>
                         </form>
                     </div>
                     <div class="col-md-6 contacts-list">

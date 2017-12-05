@@ -36,3 +36,37 @@
     }
   }
 }
+
+.main-button{font-family: 'roadradio';font-size: 23px;padding:10px 20px;
+  background: #619EFB;color: #fff;border: 2px solid #fff;border-radius: 10px;
+display: inline-block}
+.btn-1:hover {color: #619EFB;background: #619EFB;border: 2px solid #619EFB;}
+.btn-1:hover:after {
+  height: 470%;
+  opacity: 1;
+}
+.btn-1:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-1 {border: 2px solid #fff;color: #fff;    z-index: 1;
+  position: relative;    background: #619EFB;}
+.btn-1 {
+  overflow: hidden;
+}
+.btn-1:after {
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
