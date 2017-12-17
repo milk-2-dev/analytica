@@ -399,6 +399,8 @@ h1{
 }
 
 .contacts-list{
+  padding-left:100px;
+
   p{
     font-size: 26px;
     text-transform: uppercase;
@@ -617,6 +619,9 @@ h1{
     .card-block{
       max-height:392px;
       overflow: auto;
+      height: 400px;
+      align-items: center;
+      display: flex;
     }
   }
 }
