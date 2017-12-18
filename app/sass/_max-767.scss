@@ -1,3 +1,55 @@
 @media (max-width: 767px) {
+  .video-wrapper iframe {
+    top: 26px;
+  }
+
+  .setting-item__bonus {
+    width: 100%;
+  }
+  .contacts-list {
+    padding-left: 15px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  #footer{
+    div{
+      text-align: center !important;
+    }
+  }
+
+  .first-screen {
+    h1{
+      padding-left: 0;
+
+      span {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+        font-size: 26px;
+      }
+    }
+  }
+
+  #header .logo {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .header-number {
+    padding-left: 0;
+    text-align: center;
+    float:none;
+
+    i{
+      display: none;
+    }
+  }
+
+  .header-callback {
+    float: none;
+    text-align: center;
+  }
 
 }
