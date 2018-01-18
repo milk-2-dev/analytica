@@ -4,7 +4,8 @@
   }
 
   .custom-bg_1 {
-    background-size: 500px;
+    background-size: 310px;
+    background-position: 100% 100%;
   }
 
   .first-screen{
@@ -13,10 +14,11 @@
 
     h1{
       font-size: 26px;
+      text-align: left;
       //margin-bottom: 20px !important;
 
       span {
-        font-size: 125px;
+        font-size: 98px;
       }
     }
   }

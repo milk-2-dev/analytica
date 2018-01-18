@@ -297,7 +297,7 @@ h1{
       height:140%;
       transform: translate(-50%, -50%);
       transition: .2s ease-in-out;
-      background: map_get($colors, 'custom_3');
+      background: #fff;
       z-index: -1;
     }
   }
