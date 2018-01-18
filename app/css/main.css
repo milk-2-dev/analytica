@@ -616,6 +616,7 @@ h1 {
   border: 2px solid #fff;
   -webkit-border-radius: 4px;
           border-radius: 4px;
+  cursor: pointer;
   display: inline-block; }
 
 .btn-1:hover {
@@ -719,11 +720,29 @@ input:focus:-ms-input-placeholder {
         -webkit-transform: translate(0, -50%);
             -ms-transform: translate(0, -50%);
                 transform: translate(0, -50%); }
+  .form-custom .input-with-icon {
+    position: relative; }
+    .form-custom .input-with-icon input {
+      padding-left: 35px; }
+    .form-custom .input-with-icon i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
   .form-custom label {
     margin-bottom: 4px;
-    display: block; }
+    display: block;
+    color: #fff; }
   .form-custom input {
-    width: 100%; }
+    min-height: 40px;
+    border: none;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 100%;
+    background: #fff;
+    padding: 0 5px; }
   .form-custom .form-button {
     margin: 40px 0 0;
     text-align: center; }
@@ -866,7 +885,8 @@ input:focus:-ms-input-placeholder {
     text-align: center; }
     .first-screen h1 {
       font-size: 26px;
-      text-align: left; }
+      text-align: left;
+      padding-left: 210px; }
       .first-screen h1 span {
         font-size: 98px; }
   .video-wrapper iframe {
