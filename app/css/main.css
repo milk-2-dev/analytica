@@ -538,6 +538,27 @@ h1 {
     display: -ms-flexbox;
     display: flex; }
 
+.modal-header {
+  display: block;
+  border: none; }
+
+.close {
+  float: none;
+  position: absolute;
+  top: 5px;
+  right: 10px; }
+
+.modal-title {
+  color: #747474;
+  text-align: center;
+  margin: 0; }
+
+.modal-body {
+  background: #619efb;
+  padding: 45px 0; }
+  .modal-body .form-custom {
+    background: transparent; }
+
 .text-gray {
   color: #a9a9a9; }
 
