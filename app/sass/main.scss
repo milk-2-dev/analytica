@@ -1,13 +1,13 @@
 /* ============================ Main styles ============================ */
 
-@import 'variables';
-@import 'typography';
-@import 'base';
-@import 'atomic';
-@import 'buttons';
-@import 'forms';
+@import '_variables';
+@import '_typography';
+@import '_base';
+@import '_atomic';
+@import '_buttons';
+@import '_forms';
 
-@import 'animation';
+@import '_animation';
 @import "fonts";
 
 /* ============================ Media max-1200px ============================ */

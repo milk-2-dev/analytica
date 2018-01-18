@@ -9,7 +9,6 @@
   font-size: 16px;
   line-height: 1;
 
-
   &:hover,
   &:focus{
     text-decoration: none;
@@ -40,7 +39,7 @@
 
 .main-button{font-family: 'roadradio';font-size: 20px;padding:10px 20px;
   background: #619EFB;color: #fff;border: 2px solid #fff;border-radius: 4px;
-display: inline-block;cursor: pointer;}
+display: inline-block}
 .btn-1:hover {color: #619EFB;background: #619EFB;border: 2px solid #619EFB;}
 .btn-1:hover:after {
   height: 470%;
