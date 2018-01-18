@@ -212,6 +212,12 @@ h1{
 
 .author-block{
   color: #fff;
+
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
   
   img{
     display: block;

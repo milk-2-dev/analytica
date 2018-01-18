@@ -213,6 +213,10 @@ h1 {
 
 .author-block {
   color: #fff; }
+  .author-block:after {
+    content: '';
+    display: block;
+    clear: both; }
   .author-block img {
     display: block;
     padding: 4px;
