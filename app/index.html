@@ -64,7 +64,7 @@
                         </p>
 
                         <div class="order-button_1">
-                            <a href="" class="main-button btn-1">Получить консультацию</a>
+                            <a href="javascript: void(0);" data-toggle="modal" data-target="#order-modal" class="main-button btn-1">Получить консультацию</a>
                         </div>
 
                     </div>
@@ -72,16 +72,14 @@
             </div>
         </section>
 
-        <section class="section-block custom-bg_2">
+        <section class="section-block custom-bg_2" style="padding: 20px 0;">
             <div class="container">
-                <div class="row">
-                    <div class="author-block">
-                        <img src="./images/Wanamaker-2.jpg" alt="">
+                <div class="author-block">
+                    <!--<img class="hidden-sm-down" src="images/Wanamaker-2.jpg" alt="">-->
 
-                        <p>“Я знаю, что половина моего рекламного бюджета расходуется впустую. Беда в том, что я не знаю, какая именно половина”</p>
-                        <span><i>Джон Ванамейкер, <br/>
+                    <p>“Я знаю, что половина моего рекламного бюджета расходуется впустую. Беда в том, что я не знаю, какая именно половина”</p>
+                    <span><i>Джон Ванамейкер, <br/>
 создатель первой в мире сети универмагов</i></span>
-                    </div>
                 </div>
             </div>
         </section>
@@ -168,7 +166,7 @@
                         </p>
                     </div>
                     <div class="col-lg-4 hidden-md-down align-self-center">
-                        <img src="./images/website-analytics.png" alt="">
+                        <img src="images/website-analytics.png" alt="">
                     </div>
                 </div>
             </div>
@@ -455,37 +453,141 @@
     <!-- /FOOTER -->
 
     <!--MODALS-->
-    <div class="modal fade" id="singIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header justify-content-center bg-gray">
-                    <h5 class="modal-title">Sing In</h5>
-                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                    <!--<span aria-hidden="true">&times;</span>-->
-                    <!--</button>-->
-                </div>
-                <div class="modal-body">
-                    <div class="modal-body__wrap">
-                        <div class="login-form__wrap">
-                            <h4 class="margin_b_40">
-                                You aren’t signed in! In order to sway your message, please sign in below, or create an account if you don’t have one yet.
-                            </h4>
+    <div class="modal fade" id="order-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Заполните поля и нажмите кнопку отправить <br/> наш консультант Вам перезвонит</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-custom">
+              <form action="/" method="post">
+                <input type="hidden" name="CAMPAIN" value="">
+                <input type="hidden" name="CHANNEL" value="">
+                <input type="hidden" name="SRC" value="">
+                <input type="hidden" name="FORMNAME" value="Регистрация">
 
-                            <div class="login-block br_b padding_b_50">
-                                <a href="" class="button bg-royalBlue color-white">Sing in with Facebook</a>
-                                <a href="" class="button bg-orange color-white">Sing in with Amazon</a>
-                                <a href="" class="button bg-red color-white">Sing in with Google</a>
-                                <a href="" class="button bg-dark-gray color-white">Sing in with Email</a>
-                            </div>
-
-                            <p class="link-create-account">
-                                Don`t have an account? <a href="">Create one now!</a>
-                            </p>
-                        </div>
-                    </div>
+                <div class="form-item">
+                  <label>Имя</label>
+                  <div class="input-with-icon">
+                    <input type="text" name="NAME" required placeholder="Введите имя">
+                    <i class="fa fa-user"></i>
+                  </div>
                 </div>
+                <div class="form-item">
+                  <label>Телефон</label>
+                  <div class="input-with-icon">
+                    <input type="text" name="PHONE" required placeholder="Введите номер телефона">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                </div>
+                <div class="form-button">
+                  <button class="main-button btn-1" type="submit">
+                    отправить
+                  </button>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="call-back" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Для заказа обратного звонка, заполните поля и <br/> нажмите кнопку отправить</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-custom">
+              <form action="/" method="post">
+                <input type="hidden" name="FORMNAME" value="Заказ обратного звонка">
+                <div class="form-item">
+                  <label for="">Имя</label>
+                  <div class="input-with-icon">
+                    <input type="text" name="NAME">
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class="form-item">
+                  <label for="">Телефон</label>
+                  <div class="input-with-icon">
+                    <input type="text" name="PHONE">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                </div>
+                <div class="form-button">
+                  <button class="main-button btn-1" type="submit">
+                    отправить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Политика конфиденциальности</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="background: #fff; padding: 0 20px 45px;">
+            <p style="text-align: justify;">Политика конфиденциальности содержит пояснения о том, как используется информация, которую Вы нам предоставляете, и как связаться с нами, если у Вас возникнут вопросы и проблемы. <br>
+
+              <br><b>1. Какая информация нам необходима?</b><br>
+              Если вы решаете подписаться на информационный продукт, размещенный на нашем сайте, мы запросим у Вас такую информацию, как имя и адрес электронной почты. Это объясняется следующими соображениями. Мы регулярно готовим актуальные информационные продукты (как платные, так и большое количество бесплатных) информационный маркетинг в интернет. Ваш интерес к конкретному информационному продукту позволяет предположить, что и другие продукты информационного маркетинга в интернете и другие темы могут быть Вам интересны и полезны. Для того чтобы проинформировать Вас об этих продуктах, а также обеспечить к ним доступ, нам требуется отправить Вам информационное письмо. Кроме того, мы можем проводить опрос для выяснения Вашего мнения о наших продуктах, а также Ваших пожеланий. Перед тем как предоставить нам чужие персональные данные, обязательно получите разрешение соответствующих лиц. Убедитесь, что вы предоставляете правильные и точные сведения.
+
+
+
+              <br><br><b>2. Что мы делаем с Вашей персональной информацией? </b><br>
+              Адрес Вашей электронной почты и Ваше имя мы используем в следующих целях:
+
+              - для предоставления Вам информационных продуктов и услуг, а также проведения опросов с целью определения информации, в которой Вы нуждаетесь;
+
+              - для обработки Ваших запросов в службу поддержки;
+
+              - для рассылки новостей и рекламной информации о продуктах, услугах, специальных предложениях, продуктах и услугах избранных партнеров в пределах, разрешенных действующим законодательством, или в соответствии с Вашими пожеланиями (см. ниже раздел «Отказ от подписки»);
+
+              - для рассылки служебных сообщений (например, если Вы забыли свой пароль – применительно к продуктам, содержащим пароль);
+
+              - для предотвращения и выявления мошенничества и незаконного использования моих продуктов или услуг.
+
+              <br><br><b>3. Кто еще получает доступ к персональной информации? </b>
+              <!--!!!!!!!!!!!!!!!!!!!!!!!-->
+              Для осуществления рассылок мы используем сервисы почтовых рассылок justclick.ru, GetResponse.ru, mailchimp.com. Этот сервис обрабатывает Вашу персональную информацию (т.е. e-mail и указанное Вами имя) для того, чтобы мы могли отправить Вам электронное письмо с доступом к выбранному Вами продукту или проинформировать Вас об новых актуальных продуктах информационного маркетинга в интернет, или провести опрос с целью выявления информации, в которой Вы нуждаетесь. В исключительных обстоятельствах мы можем раскрыть Вашу персональную информацию, если этого требует закон или в целях защиты себя и других от противоправных действий или других опасностей.
+
+              <br><br><b>4. Идентификационные файлы (cookies) </b>
+              Наш сайт содержит идентификационные файлы, так называемые, cookies. Cookies – представляют собой небольшие текстовые файлы, отправляемые на компьютер посетителя сайта для учета его действий. Cookies используются на моем сайте для персонализации учета посещений, изучения поведения посетителей на сайте и регистрации их действий. Вы можете отключить использование cookies в параметрах настройки браузера. Следует учитывать, однако, что в этом случае некоторые функции будут недоступны или могут работать некорректно.
+
+              <br><br><b>5. Безопасность </b>
+              Мы предпринимаем разумные меры для сведения к минимуму возможности утраты, кражи, недобросовестного использования, несанкционированного доступа к Вашей персональной информации, уничтожения, изменения или ее раскрытию. В то же время мы не можем гарантировать абсолютного устранения риска несанкционированного злоупотребления персональной информацией. Убедительно просим Вас самым внимательным образом подойти к хранению паролей к учетным записям и не сообщать их кому-либо еще (в случае, если речь идет о продуктах, содержащих пароли доступа). Немедленно свяжитесь с нами, если станет известно о каком-либо нарушении информационной безопасности (например, несанкционированном использовании Вашего пароля).
+
+              <br><br><b>6. Дети </b>
+              Мы всецело разделяем настороженность родителей в вопросах использования персональной информации об их детях. Настоятельно прошу всех посетителей младше 18 лет, получить разрешение родителей или опекунов, прежде чем предоставлять какую-либо персональную информацию. Мы не собираем информацию о детях намеренно. Если нам станет известно о том, что мы получили персональную информацию о ребенке, не достигшем 14-летнего возраста, мы предпримм меры для удаления такой информации в возможно короткие сроки.
+
+              <br><br><b>7. Отказ от подписки </b>
+              Если Вы больше не хотите получать от нас сообщения, перейдите по ссылке, указанной в нижней части любого нашего письма.
+
+              <br><br><b>8. Контакты </b>
+              Если у Вас возникнут вопросы и/или проблемы, связанные с политикой безопасности и сохранностью Ваших персональных данных, обращайтесь, пожалуйста, на адрес: lp-support@sotnik.biz
+
+              <br><br><i>С уважением, Сотник Юрий - руководитель компании "SOTNIK".</i></p>
+          </div>
+        </div>
+      </div>
     </div>
     <!--MODALS-->
 </body>
