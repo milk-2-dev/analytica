@@ -19,6 +19,9 @@
   }
 
   .first-screen {
+    min-height: 580px;
+    height: auto;
+
     h1{
       padding-left: 0;
       text-align: center;
@@ -36,12 +39,14 @@
   #header .logo {
     text-align: center;
     max-width: 100%;
+    margin-right: 100px;
   }
 
   .header-number {
     padding-left: 0;
     text-align: center;
     float:none;
+    font-size: 20px;
 
     i{
       display: none;
@@ -51,6 +56,7 @@
   .header-callback {
     float: none;
     text-align: center;
+    font-size: 16px;
   }
 
 }

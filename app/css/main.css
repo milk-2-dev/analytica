@@ -578,6 +578,9 @@ h1 {
   .bg-blue .section-block__title {
     color: #fff; }
 
+.padding_r_100 {
+  padding-right: 100px; }
+
 .button {
   display: inline-block;
   padding: 10px 32px 8px;
@@ -654,6 +657,16 @@ h1 {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg); }
+
+.rngst_phone_button {
+  position: absolute;
+  bottom: -17px;
+  right: -10px;
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 0;
+  margin-right: 0; }
 
 input::-webkit-input-placeholder {
   text-indent: 0px;
@@ -941,33 +954,37 @@ input:focus:-ms-input-placeholder {
     margin-top: 80px; }
   #footer div {
     text-align: center !important; }
-  .first-screen h1 {
-    padding-left: 0;
-    text-align: center; }
-    .first-screen h1 span {
-      position: relative;
-      left: 0;
-      top: 0;
-      -webkit-transform: translate(0, 0);
-          -ms-transform: translate(0, 0);
-              transform: translate(0, 0);
-      font-size: 26px; }
+  .first-screen {
+    min-height: 580px;
+    height: auto; }
+    .first-screen h1 {
+      padding-left: 0;
+      text-align: center; }
+      .first-screen h1 span {
+        position: relative;
+        left: 0;
+        top: 0;
+        -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+        font-size: 26px; }
   #header .logo {
     text-align: center;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-right: 100px; }
   .header-number {
     padding-left: 0;
     text-align: center;
-    float: none; }
+    float: none;
+    font-size: 20px; }
     .header-number i {
       display: none; }
   .header-callback {
     float: none;
-    text-align: center; } }
+    text-align: center;
+    font-size: 16px; } }
 
 /* ============================ Media max-550px ============================ */
 @media (max-width: 550px) {
   .custom-bg_1 {
-    background: transparent; }
-  .first-screen {
-    min-height: 580px; } }
+    background: transparent; } }

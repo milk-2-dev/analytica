@@ -27,3 +27,9 @@ $(document).ready(function(){
         })
     })
 });
+
+setTimeout(function(){
+    $('.header-callback').after($('.rngst_phone_button'));
+}, 1000);
+
+

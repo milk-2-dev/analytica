@@ -71,3 +71,14 @@ display: inline-block;cursor: pointer;}
   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
+
+.rngst_phone_button {
+  position: absolute;
+  bottom: -17px;
+  right: -10px;
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 0;
+  margin-right: 0;
+}
